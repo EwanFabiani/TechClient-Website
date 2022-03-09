@@ -6,6 +6,8 @@ body {
 }
 
 #header {
+	position: sticky;
+	top: 0;
 	height: 50px;
     margin: 0px;
     background: black;
@@ -45,15 +47,19 @@ body {
 	text-align: center;
 }
 
+
+#name {
+	position: relative;
+	margin-top: 450px;
+}
+
 #title {
-	margin-top: 150px;
 	text-align: center;
 	font-size: 96px;
 	color: white;
 }
 
 #titledesc {
-	margin-top: 25px;
 	text-align: center;
 	font-size: 36px;
 	color: white;
