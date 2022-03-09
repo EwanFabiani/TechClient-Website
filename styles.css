@@ -1,0 +1,60 @@
+body {
+	background-color: rgb(50, 100, 255);
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+#header {
+	height: 50px;
+    margin: 0px;
+    background: black;
+	background: rgba(0,0,0,0.8);
+	margin: auto;
+}
+
+#header a {
+	color: white;
+	font-size: 24px;
+	top: 10px;
+	margin: auto;
+	position: relative;
+	padding: 12px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+#header a::after {
+	content: " ";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: red;
+    width: 0;
+    height: 3px;
+    transition: all 200ms ease-out;
+}
+
+#header a:hover::after {
+	width: 100%;
+}
+
+#speciallink {
+	text-align: center;
+}
+
+#title {
+	margin-top: 150px;
+	text-align: center;
+	font-size: 96px;
+	color: white;
+}
+
+#titledesc {
+	margin-top: 25px;
+	text-align: center;
+	font-size: 36px;
+	color: white;
+}
