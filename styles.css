@@ -8,18 +8,19 @@ body {
 #header {
 	position: fixed;
 	top: 0;
-	height: 50px;
     margin: 0px;
 	width: 100%;
-    background: black;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
 	background: rgba(0,0,0,0.8);
-	margin: auto;
 }
 
 #header a {
 	color: white;
 	font-size: 24px;
-	top: 10px;
+	top: 0;
 	margin: auto;
 	position: relative;
 	padding: 12px;
@@ -42,10 +43,6 @@ body {
 
 #header a:hover::after {
 	width: 100%;
-}
-
-#speciallink {
-	text-align: center;
 }
 
 
@@ -81,7 +78,7 @@ html {
 	position: absolute;
 	width: 100%;
 	height: 50%;
-	margin-top: 120%;
+	top: 100%;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -91,7 +88,25 @@ html {
 	font-size: 50px;
 }
 
-#feature1-title {
-	font-size: 20px;
-	margin-left: 5%;
+.feature-title {
+	font-size: 30px;
+}
+
+.feature-img {
+	background: red;
+	width: 100%;
+	height: 200px;
+	margin-top: 10px;
+}
+.feature-parent {
+	justify-content: center;
+	padding: 15px;
+}
+
+#feature-desc {
+	width: 99%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 1px;
+	justify-content: center;
 }
