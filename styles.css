@@ -55,7 +55,7 @@ body {
 }
 
 #name-text {
-	transform: translate(0, 300%);
+	transform: translateY(200%);;
 }
 
 #title {
@@ -71,7 +71,7 @@ body {
 }
 
 #download-button {
-	position: absolute;
+	position: relative;
 	border: 2px solid;
 	background: white;
 	color: black;
@@ -79,7 +79,7 @@ body {
 	height: 80px;
 	left: 50%;
 	transform: translateX(-50%);
-	margin-top: 10px;
+	margin-top: 1%;
 	font-size: 30px;
 }
 
@@ -111,6 +111,7 @@ html {
 	text-align: center;
 	font-size: 50px;
 	margin-top: 50px;
+	color: white;
 }
 
 .feature-title {
@@ -122,14 +123,15 @@ html {
 	height: 100px;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
-	margin-top: 0px;
+	margin-top: -1.5px;
+	justify-content: center;
 }
 .feature-parent {
 	position: relative;
 	justify-content: center;
 	border-radius: 25px;
-	border: 2px solid;
-	width: 15%;
+	border: 3px solid;
+	width: 220px;
 	height: 85%;
 	margin: 20px;
 	flex-shrink: 1 0 auto;
@@ -142,4 +144,37 @@ html {
 	height: 80.8%;
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
+	text-align: center;
+	margin-top: 4px;
+	font-size: 33px;
+}
+
+#features-more-to-come {
+	font-size: 50px;
+	color: white;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+.feature-title-text {
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+}
+
+#feature1-title-text {
+	top: 35px;
+}
+
+#feature2-title-text{
+	top: 13px;
+}
+
+#feature3-title-text{
+	top: 13px;
+}
+
+#feature4-title-text{
+	top: 13px;
 }
