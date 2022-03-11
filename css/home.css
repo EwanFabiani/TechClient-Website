@@ -1,0 +1,37 @@
+#home {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-image: url(res/background-image.jpg);
+}
+
+#name-text {
+	transform: translateY(200%);;
+}
+
+#title {
+	text-align: center;
+	font-size: 96px;
+	color: white;
+}
+
+#titledesc {
+	text-align: center;
+	font-size: 36px;
+	color: white;
+}
+
+#download-button {
+	position: relative;
+	border: 3px solid;
+	background: white;
+	color: black;
+	width: 300px;
+	height: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 1%;
+	font-size: 45px;
+	border-radius: 5px;
+}
