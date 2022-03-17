@@ -1,0 +1,62 @@
+#community {
+    z-index: -4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 300%;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#community-title {
+    position: absolute;
+    color: white;
+    font-size: calc(25px + 3vw);
+    top: 5%;
+}
+
+#join-community {
+    position: absolute;
+    color: white;
+    font-size: calc(15px + 2.2vw);
+    top: 15%;
+}
+
+#social-media-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+    justify-content: space-around;
+    height: 30%;
+}
+
+.social-link {
+    width: 25%;
+    height: 65%;
+    background: rgb(69, 69, 69, 0.5);
+    border: 4px solid rgb(0, 0, 0);
+    text-decoration: none;
+    color: white;
+    font-size: calc(20px + 2vw);
+    text-align: center;
+}
+
+.social-text {
+    padding: 12.5%;
+    font-weight: bolder;
+}
+
+#twitter {
+    color: #1DA1F2;
+}
+
+#youtube {
+    color: #FF0000;
+}
+
+#discord {
+    color: #404EED;
+}

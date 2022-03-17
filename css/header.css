@@ -15,6 +15,7 @@ body {
 	text-align: center;
 	justify-content: center;
 	background: rgba(0,0,0,0.8);
+	z-index: 10;
 }
 
 #header a {
@@ -47,4 +48,9 @@ body {
 
 html {
 	scroll-behavior: smooth;
+}
+
+.parent {
+	border-top: 1px solid rgb(69, 69, 69, 0.5);
+	border-bottom: 1px solid rgb(69, 69, 69, 0.5);
 }

@@ -2,16 +2,20 @@
 
 <head>
 	
-	<title> Test </title>
+	<title> TechClient </title>
 	<link rel="stylesheet" href="css/features.css" type="text/css">
 	<link rel="stylesheet" href="css/header.css" type="text/css">
 	<link rel="stylesheet" href="css/home.css" type="text/css">
 	<link rel="stylesheet" href="css/news.css" type="text/css">
+	<link rel="stylesheet" href="css/community.css" type="text/css">
+	<link rel="stylesheet" href="css/about-us.css" type="text/css">
 	<script type="text/javascript" src="javascript.js"></script>
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="icon" href="css/res/tclogo.png">
+	
 	
 </head>
 
@@ -22,68 +26,101 @@
 		<a href="#home"> Home </a>
 		<a href="#features"> Features </a>
 		<a href="#news"> News </a>
-		<a href="#"> Community </a>
-		<a href="#"> About Us </a>
-
-	</div>	
+		<a href="#community"> Community </a>
+		<a href="#about-us"> About Us </a>
+	</div>
 
 	<!-- Center -->
-	<div id="home">
-		<div id="background-image"></div>
+	<div id="home" class="parent">
 		<div id="name-text">
 			<div id="title">
 				<strong>TechClient</strong>
+				<div id="titledesc">
+					An optimized Minecraft 1.8 Client for everyone!
+					<button id="download-button">
+						Download
+					</button>
+				</div>
 			</div>
-			<div id="titledesc">
-				An optimized Minecraft 1.8 Client for everyone!
 			</div>
-			<button id="download-button">
-				Download
-			</button>
-		</div>
+
 	</div>
 
 	<!-- Features -->
-	<div id="features">
-		<div id="features-title"><strong>Lots of Features...</strong></div>
-		<div id="feature-div">
-			<a href="#home" id="feature1" class="feature-parent">
-				<div id="feature1-title" class="feature-title">
-					<div id="feature1-title-text" class="feature-title-text">20+ Mods</div>
+	<div id="features" class="parent">
+		<div id="features-title">
+			<strong>Features...</strong>
+		</div>
+		<div id="card-parent">
+			<div class="card card1 card-parent">
+				<div class="card face front">
+					<h2 class="card">Front</h2 >
 				</div>
-				<div id="feature1-desc" class="feature-desc">TechClient has every Mod you'll need for a great Minecraft experience</div>
-			</a>
-			<a href="#home" id="feature2" class="feature-parent">
-				<div id="feature2-title" class="feature-title">
-					<div id="feature2-title-text" class="feature-title-text">Minecraft Optimizations</div>
+				<div class="card face back">
+					<h2 class="card">Back</h2>
 				</div>
-				<div id="feature2-desc" class="feature-desc">Runs smoother and faster with our optimizations of Minecraft</div>
-			</a>
-			<a href="#home" id="feature3" class="feature-parent">
-				<div id="feature3-title" class="feature-title">
-					<div id="feature3-title-text" class="feature-title-text">A great community</div>
+			</div>
+			<div class="card card2 card-parent">
+				<div class="card face front">
+					<h2 class="card">Front</h2 >
 				</div>
-				<div id="feature3-desc" class="feature-desc">Nice, welcoming Community for new TechClient users</div>
-			</a>
-			<a href="#home" id="feature4" class="feature-parent">
-				<div id="feature4-title" class="feature-title">
-					<div id="feature4-title-text" class="feature-title-text">Works everywhere</div>
+				<div class="card face back">
+					<h2 class="card">Back</h2>
 				</div>
-				<div id="feature4-desc" class="feature-desc">TechClient is optimized for Singleplayer and Multiplayer anywhere you want</div>
-			</a>
-			<div id="features-more-to-come"><strong>...and many more to come!</strong></div>
+			</div>
+			<div class="card card3 card-parent">
+				<div class="card face front">
+					<h2 class="card">Front</h2 >
+				</div>
+				<div class="card face back">
+					<h2 class="card">Back</h2>
+				</div>
+			</div>
+			<div class="card card4 card-parent">
+				<div class="card face front">
+					<h2 class="card">Front</h2 >
+				</div>
+				<div class="card face back">
+					<h2 class="card">Back</h2>
+				</div>
+			</div>
+			<div id="features-end">
+				<strong>...and many more to come!</strong>
+			</div>
 		</div>
 	</div>
 
 	<!-- News -->
-	<div id="news">
-		<div id="news-title"><strong>News</strong></div>
-		<div id="main-news">
-			<div id="main-news-sub"></div>
+	<div id="news" class="parent">
+		<div id="news-title"> <strong>News</strong></div>
+		<div id="main-news"></div>
+		<div id="small-news">
+			<div id="small-news1" class="small-news"></div>
+			<div id="small-news2" class="small-news"></div>
+			<div id="small-news3" class="small-news"></div>
 		</div>
-		<div id="other-news1" class="other-news"></div>
-		<div id="other-news2" class="other-news"></div>
-		<div id="other-news3" class="other-news"></div>
 	</div>
+
+	<!-- Community -->
+	<div id="community" class="parent">
+		<div id="community-title">
+			<strong>Community</strong>
+		</div>
+		<div id="join-community">Join our Community</div>
+		<div id="social-media-container">
+			<a id="twitter" class="social-link" href="twitter.com">
+				<div class="social-text">Twitter</div>
+			</a>
+			<a id="discord" class="social-link" href="https://discord.gg/jQbdstW44y">
+				<div class="social-text">Discord</div>
+			</a>
+			<a id="youtube" class="social-link" href="youtube.com">
+				<div class="social-text">Youtube</div>
+			</a>
+		</div>
+	</div>
+
+	<!-- About Us -->
+	<div id="about-us" class="parent"></div>
 	
 </body>
