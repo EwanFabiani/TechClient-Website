@@ -4,6 +4,84 @@
     height: 100%;
     position: absolute;
     top: 400%;
-    margin-left: 0;
-    background: green;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#about-title {
+    position: absolute;
+    color: white;
+    font-size: calc(25px + 3vw);
+    top: 5%;
+}
+
+#about-us-parent {
+    width: 80%;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.about-us-object {
+    border: 2px solid white;
+    position: relative;
+    width: 15vw;
+    height: 35vw;
+    min-width: 150px;
+    min-height: 350px;
+}
+
+.upper-section {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    border-bottom: 2px solid white;
+    background: rgb(69, 69, 69, 0.5);
+}
+
+.about-txt {
+    color: white;
+    font-size: calc(15px + 1vw);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 38%;
+}
+
+.about-img {
+    position: absolute;
+    background: black;
+    border-radius: 50px;
+    margin-top: 4%;
+    z-index: 10;
+    width: 32%;
+    padding-top: 32%;
+    left: 50%;
+    background-position: center;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lower-section {
+    color: white;
+    font-size: calc(10px + .7vw);
+    text-align: center;
+}
+
+.FireCreeper82.about-img {
+    background-image: url(res/FireCreeper82.png);
+}
+
+.TechCrafter_.about-img {
+    background-image: url(res/TechCrafter_.png);
+}
+
+.TheBossNoob.about-img {
+    background-image: url(res/TheBossNoob.png);
 }

@@ -37,8 +37,9 @@
     width: 25%;
     height: 65%;
     background: rgb(69, 69, 69, 0.5);
-    border: 4px solid rgb(0, 0, 0);
+    border: 4px solid white;
     text-decoration: none;
+    border-radius: 20px;
     color: white;
     font-size: calc(20px + 2vw);
     text-align: center;

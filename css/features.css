@@ -36,13 +36,16 @@
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
     transform: perspective(500px) rotateY(0deg);
 }
 
 .card-parent .face.front {
-    background: #ff0;
+    background: rgb(49, 53, 63);
+    font-size: calc(10px + .65vw);
+    text-align: center;
     border-radius: 15px;
+    color: white;
 }
 
 .card-parent:hover .face.front {
@@ -50,8 +53,9 @@
 }
 
 .card-parent .face.back {
-    background: #3bc2ff;
+    background: rgb(32, 34, 41);
     border-radius: 15px;
+    font-size: calc(8px + .4vw);
     color: #fff;
     transform: perspective(500px) rotateY(180deg);
 }
@@ -61,7 +65,7 @@
 }
 
 .card-parent .face h2 {
-    transform: perspective(500px) translateZ(18px);
+    transform: perspective(500px) translateZ(45px);
 }
 
 #features-title {
