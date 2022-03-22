@@ -1,0 +1,26 @@
+{
+    "main-news": {
+        "name": "Something",
+        "description": "Something happened lol",
+        "img": "",
+        "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    "1news1": {
+        "name": "Dev died",
+        "description": "TechClient Dev found dead, prob suicide",
+        "img": "",
+        "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    "news2": {
+        "name": "Release",
+        "description": "Release nd Stuff",
+        "img": "",
+        "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    "news3": {
+        "name": "Another Thing",
+        "description": "This is something",
+        "img": "",
+        "link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    }
+}
