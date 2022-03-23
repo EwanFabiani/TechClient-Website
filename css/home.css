@@ -18,6 +18,11 @@
     font-size: calc(40px + 8vw);;
     text-align: center;
     height: 22%;
+    color: white;
+}
+
+#parent {
+    width: 100%;
 }
 
 #titledesc {
@@ -25,21 +30,104 @@
     font-size: calc(12px + 1.2vw);
     left: 2%;
     height: 100%;
+    color: white;
 }
 
-#download-button {
+#download-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
     position: relative;
-    font-size: calc(10px + 1.5vw);
-    text-align: center;
-    width: 30%;
-    height: 35%;
-    min-width: 150px;
-    min-height: 51px;
-    margin-top: 5%;
-    border: 3px solid;
-    background: white;
+    top: 77%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    height: 14%;
+    min-width: 168.75px;
+    min-height: 80px;
 }
 
-#download-button:hover {
-    background: rgb(197, 197, 197);
+.download-button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+    
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.button-container a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #fff;
+    margin: 20px;
+    border-radius: 25px;
+}
+
+.button-container a:before,
+.button-container a:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #f00;
+    transition: 0.3s ease;
+}
+
+.button-container a:before,
+.button-container a:after {
+    border-radius: 25px;
+    background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);
+}
+
+.button-container a:hover:before {
+    inset: -4px;
+}
+
+.button-container a:hover:after {
+    inset: -4px;
+    filter: blur(10px);
+}
+
+.button-container a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #0e1538;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(12px + 1.15vw);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border: 1px solid #040a29;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.button-container a span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, 0.075);
+    transform: skew(25deg);
 }

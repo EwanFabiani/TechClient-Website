@@ -24,19 +24,12 @@
     position: relative;
     left: -5%;
     background: rgb(69, 69, 69, 0.5);
-    color: black;
+    color: white;
     text-decoration: none;
     justify-content: center;
     align-items: center;
     display: flex;
-}
-
-#main-news-text {
-    font-size: calc(25px + 3vw);
-}
-
-.small-news-text {
-    font-size: calc(12px + 1.5vw);
+    font-size: calc(22px + 3vw);
 }
 
 #small-news {
@@ -46,6 +39,7 @@
     height: 60%;
     top: 0.5%;
     position: relative;
+    font-size: calc(8px + 1.5vw);
 }
 
 .small-news {
@@ -53,7 +47,7 @@
     height: 30%;
     border: 2px solid white;
     background: rgb(69, 69, 69, 0.5);
-    color: black;
+    color: white;
     text-decoration: none;
     justify-content: center;
     align-items: center;

@@ -10,62 +10,208 @@
     align-items: center;
 }
 
-.card {
+.feature-card {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
 }
 
-.card-parent {
+#card-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 29);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.card-container {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-container .card {
     position: relative;
-    width: 15vw;
-    height: 20vw;
-    min-width: 125px;
-    min-height: 166px;
-    transform-style: preserve-3d;
+    width: 16.5%;
+    min-width: 140px;
+    aspect-ratio: 3 / 4;
+    background: #0c002b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    overflow: hidden;
 }
 
-.card-parent .face {
+.card-container:hover .card {
+    opacity: 0.2;
+}
+
+.card-container .card:hover {
+    opacity: 1;
+}
+
+.card-container .card::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+
+.card-container .card .card-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.card-container .card .card-content h2 {
+    position: absolute;
+    right: 30px;
+    font-size: 4vw;
+    font-weight: 800;
+    color: #1779ff;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.card-container .card:hover .card-content h2 {
+    opacity: 1;
+    transform: translateY(-70%);
+}
+
+.card-container .card .card-content h3 {
+    position: relative;
+    font-size: 1.5vw;
+    z-index: 2;
+    color: #fff;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card-container .card .card-content p {
+    position: relative;
+    font-size: 1vw;
+    z-index: 2;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card-container .card:hover .card-content h3,
+.card-container .card:hover .card-content p {
+    opacity: 1;
+}
+
+.card-container .card .card-content a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #fff;
+    color: #0c002b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+.card-container .card span {
+    transition: 0.5;
+    opacity: 0;
+}
+
+.card-container .card:hover span {
+    opacity: 1;
+}
+
+.card-container .card span:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #1779ff);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%)
+    }
+    100% {
+        transform: translateX(100%)
+    }
+}
+
+.card-container .card span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
     height: 100%;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden;
-    transition: .5s ease-in-out;
-    transform: perspective(500px) rotateY(0deg);
+    background: linear-gradient(to bottom, transparent, #1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
 }
 
-.card-parent .face.front {
-    background: rgb(49, 53, 63);
-    font-size: calc(8px + .45vw);
-    text-align: center;
-    border-radius: 15px;
-    color: white;
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%)
+    }
+    100% {
+        transform: translateY(100%)
+    }
 }
 
-.card-parent:hover .face.front {
-    transform: perspective(500px) rotateY(180deg);
+.card-container .card span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #1779ff);
+    animation: animate3 2s linear infinite;
 }
 
-.card-parent .face.back {
-    background: rgb(32, 34, 41);
-    border-radius: 15px;
-    font-size: calc(8px + .4vw);
-    color: #fff;
-    transform: perspective(500px) rotateY(180deg);
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(-100%)
+    }
 }
 
-.card-parent:hover .face.back {
-    transform: perspective(500px) rotateY(360deg);
+.card-container .card span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #1779ff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
 }
 
-.card-parent .face h2 {
-    transform: perspective(500px) translateZ(35px);
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%)
+    }
+    100% {
+        transform: translateY(-100%)
+    }
 }
 
 #features-title {
@@ -75,20 +221,11 @@
     top: 5%;
 }
 
-#card-parent {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: space-around;
-    width: 85%;
-    height: 73%;
-    margin-top: 10%;
-}
-
 #features-end {
     position: relative;
     color: white;
     font-size: calc(20px + 2.5vw);
-    top: 2.5%;
+    top: 30%;
+    right: 50%;
 }
 
