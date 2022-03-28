@@ -50,7 +50,7 @@
 }
 
 .card-container:hover .card {
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 .card-container .card:hover {
@@ -86,7 +86,16 @@
 
 .card-container .card:hover .card-content h2 {
     opacity: 1;
+    cursor: default;
     transform: translateY(-70%);
+}
+
+.card-container .card .card-content p {
+    cursor: default;
+}
+
+.card-container .card .card-content h3 {
+    cursor: default;
 }
 
 .card-container .card .card-content h3 {
