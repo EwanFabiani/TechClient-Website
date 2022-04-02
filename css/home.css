@@ -45,10 +45,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 50%;
-    aspect-ratio: 3.5 / 1;
-    min-width: 220px;
-    min-height: 62.8571428571px;
     align-self: center;
     justify-self: center;
 }
@@ -79,6 +75,9 @@
     background: #fff;
     margin: 20px;
     border-radius: 25px;
+    width: 18vw;
+    aspect-ratio: 3.5 / 1;
+    min-width: 250px;
 }
 
 .button-container a:before,
