@@ -1,13 +1,15 @@
 #features {
     z-index: -2;
-    min-width: 100%;
-    min-height: 100%;
+    height: auto;
+    min-height: 100% !important;
     position: absolute;
     top: 100%;
     margin-left: 0;
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-rows: minmax(20%, 120px) minmax(80%, 300px);
     align-items: center;
+    text-align: center;
 }
 
 .feature-card {
@@ -224,10 +226,8 @@
 }
 
 #features-title {
-    position: absolute;
     color: white;
     font-size: calc(25px + 3vw);
-    top: 5%;
 }
 
 #features-end {

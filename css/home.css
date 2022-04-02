@@ -1,10 +1,8 @@
 #home {
     z-index: -1;
-    min-width: 100%;
-    min-height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    height: fit-content;
+    height: auto;
+    min-height: 100% !important;
+    width: 100%;
     position: absolute;
     margin-top: 0;
     margin-left: 0;
@@ -12,7 +10,7 @@
     background-repeat: no-repeat;
     background-position: center;
     display: grid;
-    grid-template-rows: 50% 25% 10% 5%;
+    grid-template-rows: minmax(50%, 300px) minmax(25%, 150px) minmax(10%, 60px) minmax(5%, 30px);
     justify-content: center;
     align-items: center;
     text-align: center;
