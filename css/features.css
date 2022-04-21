@@ -7,7 +7,7 @@
     margin-left: 0;
     display: grid;
     justify-content: center;
-    grid-template-rows: minmax(20%, 120px) minmax(80%, 300px);
+    grid-template-rows: minmax(15%, 90px) minmax(85%, 510px);
     align-items: center;
     text-align: center;
 }
@@ -80,7 +80,7 @@
     right: 30px;
     font-size: 4vw;
     font-weight: 800;
-    color: #1779ff;
+    color: rgb(0, 204, 255);
     z-index: 1;
     opacity: 0.1;
     transition: 0.5s;
@@ -152,8 +152,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 3px;
-    background: linear-gradient(to right, transparent, #1779ff);
+    height: 3.8px;
+    background: linear-gradient(to right, transparent, rgb(0, 204, 255), #d400d4);
     animation: animate1 2s linear infinite;
 }
 
@@ -170,9 +170,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 3px;
+    width: 3.8px;
     height: 100%;
-    background: linear-gradient(to bottom, transparent, #1779ff);
+    background: linear-gradient(to bottom, transparent, rgb(0, 204, 255), #d400d4);
     animation: animate2 2s linear infinite;
     animation-delay: 1s;
 }
@@ -191,8 +191,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 3px;
-    background: linear-gradient(to left, transparent, #1779ff);
+    height: 3.8px;
+    background: linear-gradient(to left, transparent, rgb(0, 204, 255), #d400d4);
     animation: animate3 2s linear infinite;
 }
 
@@ -209,9 +209,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 3px;
+    width: 3.8px;
     height: 100%;
-    background: linear-gradient(to top, transparent, #1779ff);
+    background: linear-gradient(to top, transparent, rgb(0, 204, 255), #d400d4);
     animation: animate4 2s linear infinite;
     animation-delay: 1s;
 }
