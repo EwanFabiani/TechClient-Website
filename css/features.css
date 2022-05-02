@@ -10,7 +10,7 @@
     grid-template-rows: minmax(19.5%, 117px) minmax(65%, 390px);
     align-items: center;
     text-align: center;
-    border: none;
+    border: 1px solid beige;
 }
 
 .feature-card {
